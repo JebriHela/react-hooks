@@ -8,7 +8,7 @@ const MovieList = ({ movies }) => {
             flexDirection: 'row',
             justifyContent: 'space-evenly',
             flexWrap: 'wrap',
-        }}>
+        }} >
             {movies.map((movie, i) => <MovieCard movie={movie} key={i} />)}
         </div>
     )

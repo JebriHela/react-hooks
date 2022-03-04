@@ -1,8 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Rate from '../Rate'
 import './MovieCard.css'
 const MovieCard = ({ movie }) => {
   return (
+		 <Link to={`/movie/descption/${movie.name}`}>
     <div>
      <body>
 	<div class="hero-container">
@@ -27,6 +29,7 @@ const MovieCard = ({ movie }) => {
 	</div>
 </body>
     </div>
+	</Link>
   )
 }
 
